@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.berkcan.megareji">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="Mega Reji">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".Admin2_Activity" />
+        <activity android:name=".EnterPlace" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".ShowPlace" />
+        <activity android:name=".ShowPlaceEnd" />
+        <activity android:name=".EnterActor" />
+        <activity android:name=".ShowActor" />
+        <activity android:name=".ShowActorEnd" />
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".SendNotification" />
+        <activity android:name=".EnterPlan" />
+        <activity android:name=".ShowPlan" />
+        <activity android:name=".ShowPlanEnd" />
+        <activity android:name=".WriteScenario" />
+        <activity android:name=".ShowScenario" />
+        <activity android:name=".ShowScenarioEnd" />
+        <activity android:name=".CreateorChangeRequestReport" />
+        <activity android:name=".LeaderBoard" />
+        <activity android:name=".ChooseMenuActivity" />
+        <activity android:name=".CreateorChangePostProReport" />
+        <activity android:name=".EnterSetList" />
+        <activity android:name=".EnterSetName" />
+        <activity android:name=".SceneList" />
+        <activity android:name=".EnterSceneName" />
+        <activity android:name=".LastSetandScene" />
+        <activity android:name=".ShowSetScenePlan" />
+        <activity android:name=".AddorChangeSetScenePlan" />
+        <activity android:name=".SSShowPlace" />
+        <activity android:name=".SSShowPlaceEnd" />
+        <activity android:name=".SSShowScenario" />
+        <activity android:name=".SSShowScenarioEnd" />
+        <activity android:name=".SSShowActor" />
+        <activity android:name=".SSShowActorEnd" />
+        <activity
+            android:name=".ScrollSetAndScene"
+            android:label="@string/title_activity_scroll_set_and_scene"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ShowAllRequestReport" />
+        <activity android:name=".ShowAllRequestReportEnd"></activity>
+    </application>
+
+</manifest>

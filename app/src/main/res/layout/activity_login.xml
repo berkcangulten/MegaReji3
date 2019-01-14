@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:hint="e-mail"
+        android:inputType="textPersonName"
+        android:text="superuser@super.com"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHighlight="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:onClick="signIn"
+        android:text="SIGN IN"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="60dp"
+        android:onClick="signUp"
+        android:text="SIGN UP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:shadowColor="@color/common_google_signin_btn_text_dark_default"
+        android:text="arzuberkcan"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textColorHighlight="@color/common_google_signin_btn_text_dark_pressed"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/emailText"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+</android.support.constraint.ConstraintLayout>

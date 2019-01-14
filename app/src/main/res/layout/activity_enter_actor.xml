@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterActor"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/textNameEnterActor"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="46dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textPhoneEnterActor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewEnterActor" />
+
+    <EditText
+        android:id="@+id/textSurnameEnterActor"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <EditText
+        android:id="@+id/textHeightEnterActor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:hint="Height"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textAgeEnterActor"
+        app:layout_constraintEnd_toStartOf="@+id/textWeightEnterActor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPhoneEnterActor" />
+
+    <ImageView
+        android:id="@+id/imageViewEnterActor"
+        android:layout_width="180dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="selectpictureenteractor"
+        app:layout_constraintBottom_toTopOf="@+id/textNameEnterActor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selectpicture" />
+
+    <EditText
+        android:id="@+id/textWeightEnterActor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textAgeEnterActor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textHeightEnterActor"
+        app:layout_constraintTop_toBottomOf="@+id/textPhoneEnterActor" />
+
+    <EditText
+        android:id="@+id/textPhoneEnterActor"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/textWeightEnterActor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameEnterActor" />
+
+    <EditText
+        android:id="@+id/textAgeEnterActor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="86dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textHeightEnterActor"
+        app:layout_constraintStart_toStartOf="@+id/textHeightEnterActor"
+        app:layout_constraintTop_toBottomOf="@+id/textWeightEnterActor" />
+
+</android.support.constraint.ConstraintLayout>

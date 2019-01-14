@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+        tools:context=".ScrollSetAndScene$PlaceholderFragment"
+        tools:layout_editor_absoluteY="81dp">
+
+        <TextView
+            android:id="@+id/section_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout3"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/textviewTShowPlace"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="36dp"
+            android:text="Scene:"
+            app:layout_constraintBottom_toTopOf="@+id/imageViewTShowPlaceEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewTShowPlaceEnd"
+            android:layout_width="348dp"
+            android:layout_height="197dp"
+            android:layout_marginBottom="82dp"
+            app:layout_constraintBottom_toTopOf="@+id/textviewLatitudeTShowPlaceEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textviewTShowPlace"
+            app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+        <TextView
+            android:id="@+id/textviewLatitudeTShowPlaceEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginBottom="35dp"
+            android:text="Latitude:"
+            app:layout_constraintBottom_toTopOf="@+id/textviewLongitudeTShowPlaceEnd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewTShowPlaceEnd" />
+
+        <TextView
+            android:id="@+id/textviewLongitudeTShowPlaceEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:text="Longitude:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textviewLatitudeTShowPlaceEnd"
+            app:layout_constraintTop_toBottomOf="@+id/textviewLatitudeTShowPlaceEnd" />
+
+
+
+</android.support.constraint.ConstraintLayout>

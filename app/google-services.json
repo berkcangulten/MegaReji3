@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1099496485576",
+    "firebase_url": "https://megareji-f97df.firebaseio.com",
+    "project_id": "megareji-f97df",
+    "storage_bucket": "megareji-f97df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099496485576:android:31cd1189b5234672",
+        "android_client_info": {
+          "package_name": "com.example.berkcan.megareji"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1099496485576-gmqk08o4t30j5e5cqgv5bk85tomm25il.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.berkcan.megareji",
+            "certificate_hash": "b46252c94b05588246da35116fe8ee17e7231246"
+          }
+        },
+        {
+          "client_id": "1099496485576-vsthc2sp51veki07rd0njb387e1si67c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARg33dCX63XDtRlgdylYl5fWoOD8KJw54"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1099496485576-vsthc2sp51veki07rd0njb387e1si67c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

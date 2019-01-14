@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewTActor"
+        android:layout_width="192dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewTNameSurnameActor"
+        android:layout_width="354dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTPhoneActor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTActor"
+        tools:text="Name and Surname" />
+
+    <TextView
+        android:id="@+id/textViewTPhoneActor"
+        android:layout_width="354dp"
+        android:layout_height="62dp"
+        android:shadowColor="@color/colorPrimary"
+        android:text="Phone"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTNameSurnameActor" />
+</android.support.constraint.ConstraintLayout>
